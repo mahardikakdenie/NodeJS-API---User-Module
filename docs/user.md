@@ -2,7 +2,7 @@
 
 ## Register User API
 
-- Endpoint : POST /api/users
+- Endpoint : POST /v1/users/register
 - Request Body - 
 
 ``` json
@@ -38,6 +38,34 @@
 ```
 
 ## Login User API
+
+- Endpoint GET /v1/users/login
+
+- Request Body : 
+
+``` json
+
+{
+    "username": "mahardikakdenie",
+    "password": "password",
+}
+
+```
+
+- Response body Success
+
+``` json
+
+{
+    "data": {
+        "token": "unique:token",
+    },
+}
+
+```
+
+
+
 
 ## Update User API
 
